@@ -19,7 +19,6 @@ abstract public class BaseTest {
     public static void setUp() {
         try {
             System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver");
-            WebDriverManager.chromedriver().setup();
             ChromeOptions chromeOptions = new ChromeOptions();
             chromeOptions.addArguments("--headless");
             chromeOptions.addArguments("--no-sandbox");
