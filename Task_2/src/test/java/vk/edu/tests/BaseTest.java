@@ -26,7 +26,6 @@ abstract public class BaseTest {
             chromeOptions.addArguments("--disable-dev-shm-usage");
             chromeOptions.addArguments("--remote-debugging-port=9222");
             Configuration.browserCapabilities = chromeOptions;
-
             Configuration.baseUrl = BASE_URL;
             Configuration.browser = "chrome";
             System.out.println("WebDriver успешно настроен и запущен.");
