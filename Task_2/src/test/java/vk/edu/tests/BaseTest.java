@@ -18,6 +18,7 @@ abstract public class BaseTest {
     @BeforeAll
     public static void setUp() {
         try {
+            System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver");
             WebDriverManager.chromedriver().setup();
             ChromeOptions chromeOptions = new ChromeOptions();
             chromeOptions.addArguments("--headless");
