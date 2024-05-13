@@ -16,7 +16,6 @@ public class ProfilePage {
 
 
     public ProfilePage() {
-        LoginPage loginPage = new LoginPage();
         NavbarElement navbar = new NavbarElement();
         navbar.goTo(PROFILE_BUTTON);
         checkProfilePage();

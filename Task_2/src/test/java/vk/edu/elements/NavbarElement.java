@@ -1,9 +1,6 @@
 package vk.edu.elements;
 
 import com.codeborne.selenide.SelenideElement;
-import vk.edu.elements.HeaderElement;
-import vk.edu.page.LoginPage;
-
 import static com.codeborne.selenide.Condition.exist;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$x;

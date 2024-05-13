@@ -23,7 +23,6 @@ public class MusicPage {
     private static final SelenideElement CHECK_SPAN_ARTIST = $x(".//span[@class='artist' and @slot='info']");
 
     public MusicPage() {
-        LoginPage loginPage = new LoginPage();
         HeaderElement header = new HeaderElement();
         header.goTo(MUSIC_BUTTON);
         checkMusicPage();
@@ -35,7 +34,7 @@ public class MusicPage {
 
     public boolean checkPauseButton(){
         sleep(1000);
-         return PAUSE_BUTTON.isDisplayed();
+        return PAUSE_BUTTON.isDisplayed();
     }
 
     public double checkTimeForPlay() {
@@ -56,4 +55,3 @@ public class MusicPage {
         NAVIGATION_MUSIC_MENU.shouldBe(exist.because("Отсутствует навигационная панель раздела музыки"));
     }
 }
-

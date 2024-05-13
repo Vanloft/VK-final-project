@@ -11,7 +11,7 @@ public class LoginTest extends BaseTest {
     @CsvFileSource(resources = "/logpass.csv", numLinesToSkip = 1)
     public void successfulLogin(String login, String password) {
         loginPage.authenticate(login, password);
-        if(loginPage.unsuccessLogin())
+        if (loginPage.unsuccessLogin())
             Assertions.assertTrue(loginPage.unsuccessLogin(), "Проверка неверных данных");
         else
             Assertions.assertFalse(loginPage.unsuccessLogin(), "Проверка верных данных");

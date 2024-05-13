@@ -9,6 +9,8 @@ import vk.edu.page.MusicPage;
 public class MusicTest extends BaseTest {
     @Test
     public void checkMusic() {
+        loginPage.authenticate();
+
         MusicPage musicPage = new MusicPage();
         musicPage.setPlayButton();
         Assertions.assertAll("Group test play music",
