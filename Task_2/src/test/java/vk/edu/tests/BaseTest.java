@@ -10,7 +10,7 @@ import org.junit.jupiter.api.BeforeAll;
 import vk.edu.elements.HeaderElement;
 import vk.edu.page.LoginPage;
 
-abstract public static class BaseTest {
+abstract public class BaseTest {
     private static final String BASE_URL = "https://ok.ru/";
     protected static final LoginPage loginPage = new LoginPage(BASE_URL);
 
