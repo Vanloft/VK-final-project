@@ -10,14 +10,13 @@ import org.junit.jupiter.api.BeforeAll;
 import vk.edu.elements.HeaderElement;
 import vk.edu.page.LoginPage;
 
-abstract public class BaseTest {
+abstract public static class BaseTest {
     private static final String BASE_URL = "https://ok.ru/";
     protected static final LoginPage loginPage = new LoginPage(BASE_URL);
 
     @BeforeAll
     public static void setUp() {
         try {
-            WebDriverManager.chromedriver().setup();
             WebDriverManager.chromedriver().setup();
             Configuration.baseUrl = BASE_URL;
             Configuration.browser = "chrome";
