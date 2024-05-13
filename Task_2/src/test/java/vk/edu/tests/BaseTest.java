@@ -17,7 +17,7 @@ abstract public class BaseTest {
     @BeforeAll
     public static void setUp() {
         try {
-            System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver");
+            System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
             ChromeOptions chromeOptions = new ChromeOptions();
             chromeOptions.addArguments("--no-sandbox");
             chromeOptions.addArguments("--disable-gpu");
