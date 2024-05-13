@@ -6,7 +6,6 @@ import com.codeborne.selenide.Selenide;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
-import org.openqa.selenium.chrome.ChromeOptions;
 
 import vk.edu.elements.HeaderElement;
 import vk.edu.page.LoginPage;
