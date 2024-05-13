@@ -20,7 +20,6 @@ abstract public class BaseTest {
             System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver");
             ChromeOptions chromeOptions = new ChromeOptions();
             chromeOptions.addArguments("--no-sandbox");
-            chromeOptions.addArguments("--headless");
             chromeOptions.addArguments("--single-process");
             chromeOptions.addArguments("--disable-dev-shm-usage");
             chromeOptions.addArguments("--remote-debugging-port=9222");
