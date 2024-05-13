@@ -19,17 +19,10 @@ abstract public class BaseTest {
     public static void setUp() {
         try {
             WebDriverManager.chromedriver().setup();
-            ChromeOptions options = new ChromeOptions();
-            options.addArguments("--headless");
-            options.addArguments("--disable-gpu");
-            options.addArguments("--no-sandbox");
-            options.addArguments("--disable-dev-shm-usage");
-            options.addArguments("--disable-setuid-sandbox");
-            options.addArguments("--remote-debugging-port=9222");
-
+            WebDriverManager.chromedriver().setup();
             Configuration.baseUrl = BASE_URL;
             Configuration.browser = "chrome";
-            Configuration.browserCapabilities.setCapability(ChromeOptions.CAPABILITY, options);
+            Configuration.browserSize = "1920x1080";
 
             System.out.println("WebDriver успешно настроен и запущен.");
         } catch (Exception e) {
