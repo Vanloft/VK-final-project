@@ -24,6 +24,7 @@ abstract public class BaseTest {
             chromeOptions.addArguments("--single-process");
             chromeOptions.addArguments("--disable-dev-shm-usage");
             chromeOptions.addArguments("--remote-debugging-port=9222");
+            chromeOptions.setBinary("/opt/google/chrome/chrome");
             Configuration.browserCapabilities = chromeOptions;
             Configuration.baseUrl = BASE_URL;
             Selenide.open("/");
