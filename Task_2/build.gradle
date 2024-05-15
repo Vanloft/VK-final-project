@@ -45,10 +45,3 @@ allure {
         version = "${allureVersion}"
     }
 }
-tasks.register('allureReport', io.qameta.allure.gradle.task.AllureReport) {
-    resultsDirs = files('build/allure-results')
-}
-
-tasks.register('allureServe', io.qameta.allure.gradle.task.AllureServe) {
-    resultsDirs = files('build/allure-results')
-}
