@@ -38,7 +38,7 @@ abstract public class BaseTest {
 
     @AfterEach
     public void goToLoginPage() {
-        if (!loginPage.unsuccessLogin()) {
+        if (!loginPage.unsuccessLogin() && !loginPage.alreadyOnLoginPage()) {
             HeaderElement header = new HeaderElement();
             header.logOut();
         }

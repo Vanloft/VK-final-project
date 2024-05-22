@@ -35,6 +35,14 @@ public class LoginPage {
         BUTTON_LOGIN.shouldBe(visible).click();
     }
 
+    public boolean alreadyOnLoginPage(){
+        boolean emailExists = FIELD_EMAIL.exists();
+        boolean passwordExists = FIELD_PASSWD.exists();
+        boolean loginButtonExists = BUTTON_LOGIN.exists();
+        return emailExists && passwordExists && loginButtonExists;
+    }
+
+
     public void checkLoginPage() {
         FIELD_EMAIL.shouldBe(exist.because("Не найдено поле email"));
         FIELD_PASSWD.shouldBe(exist.because("Не найдено поле password"));
